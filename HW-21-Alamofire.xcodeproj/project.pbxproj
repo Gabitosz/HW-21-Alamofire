@@ -54,14 +54,46 @@
 		03F8B6352B278D2300A52491 /* HW-21-Alamofire */ = {
 			isa = PBXGroup;
 			children = (
-				03F8B6362B278D2300A52491 /* AppDelegate.swift */,
-				03F8B6382B278D2300A52491 /* SceneDelegate.swift */,
-				03F8B63A2B278D2300A52491 /* ViewController.swift */,
-				03F8B63F2B278D2500A52491 /* Assets.xcassets */,
-				03F8B6412B278D2500A52491 /* LaunchScreen.storyboard */,
-				03F8B6442B278D2500A52491 /* Info.plist */,
+				03F8B64B2B2790EA00A52491 /* Resources */,
+				03F8B64A2B2790E200A52491 /* Sources */,
 			);
 			path = "HW-21-Alamofire";
+			sourceTree = "<group>";
+		};
+		03F8B64A2B2790E200A52491 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				03F8B64D2B27915600A52491 /* Views */,
+				03F8B64C2B27911C00A52491 /* App */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		03F8B64B2B2790EA00A52491 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				03F8B6442B278D2500A52491 /* Info.plist */,
+				03F8B6412B278D2500A52491 /* LaunchScreen.storyboard */,
+				03F8B63F2B278D2500A52491 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		03F8B64C2B27911C00A52491 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				03F8B6362B278D2300A52491 /* AppDelegate.swift */,
+				03F8B6382B278D2300A52491 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		03F8B64D2B27915600A52491 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				03F8B63A2B278D2300A52491 /* ViewController.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
