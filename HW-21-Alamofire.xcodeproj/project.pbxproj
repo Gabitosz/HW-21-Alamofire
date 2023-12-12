@@ -12,6 +12,7 @@
 		03F8B63B2B278D2300A52491 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F8B63A2B278D2300A52491 /* ViewController.swift */; };
 		03F8B6402B278D2500A52491 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03F8B63F2B278D2500A52491 /* Assets.xcassets */; };
 		03F8B6432B278D2500A52491 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03F8B6412B278D2500A52491 /* LaunchScreen.storyboard */; };
+		03F8B6532B28F0C300A52491 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F8B6522B28F0C300A52491 /* Character.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		03F8B63F2B278D2500A52491 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03F8B6422B278D2500A52491 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03F8B6442B278D2500A52491 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03F8B6522B28F0C300A52491 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 		03F8B64A2B2790E200A52491 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				03F8B6512B28F05700A52491 /* Models */,
 				03F8B64D2B27915600A52491 /* Views */,
 				03F8B64C2B27911C00A52491 /* App */,
 			);
@@ -94,6 +97,14 @@
 				03F8B63A2B278D2300A52491 /* ViewController.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		03F8B6512B28F05700A52491 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				03F8B6522B28F0C300A52491 /* Character.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +180,7 @@
 				03F8B63B2B278D2300A52491 /* ViewController.swift in Sources */,
 				03F8B6372B278D2300A52491 /* AppDelegate.swift in Sources */,
 				03F8B6392B278D2300A52491 /* SceneDelegate.swift in Sources */,
+				03F8B6532B28F0C300A52491 /* Character.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
