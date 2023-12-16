@@ -13,6 +13,8 @@
 		03F8B6402B278D2500A52491 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03F8B63F2B278D2500A52491 /* Assets.xcassets */; };
 		03F8B6432B278D2500A52491 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03F8B6412B278D2500A52491 /* LaunchScreen.storyboard */; };
 		03F8B6532B28F0C300A52491 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F8B6522B28F0C300A52491 /* Character.swift */; };
+		03F8B6572B28F35300A52491 /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F8B6552B28F35300A52491 /* CharacterTableViewCell.swift */; };
+		03F8B6582B28F35300A52491 /* CharacterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03F8B6562B28F35300A52491 /* CharacterTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		03F8B6422B278D2500A52491 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03F8B6442B278D2500A52491 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03F8B6522B28F0C300A52491 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		03F8B6552B28F35300A52491 /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
+		03F8B6562B28F35300A52491 /* CharacterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,7 @@
 		03F8B64A2B2790E200A52491 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				03F8B6542B28F2E900A52491 /* Cells */,
 				03F8B6512B28F05700A52491 /* Models */,
 				03F8B64D2B27915600A52491 /* Views */,
 				03F8B64C2B27911C00A52491 /* App */,
@@ -105,6 +110,15 @@
 				03F8B6522B28F0C300A52491 /* Character.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		03F8B6542B28F2E900A52491 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				03F8B6552B28F35300A52491 /* CharacterTableViewCell.swift */,
+				03F8B6562B28F35300A52491 /* CharacterTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +179,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03F8B6582B28F35300A52491 /* CharacterTableViewCell.xib in Resources */,
 				03F8B6432B278D2500A52491 /* LaunchScreen.storyboard in Resources */,
 				03F8B6402B278D2500A52491 /* Assets.xcassets in Resources */,
 			);
@@ -179,6 +194,7 @@
 			files = (
 				03F8B63B2B278D2300A52491 /* ViewController.swift in Sources */,
 				03F8B6372B278D2300A52491 /* AppDelegate.swift in Sources */,
+				03F8B6572B28F35300A52491 /* CharacterTableViewCell.swift in Sources */,
 				03F8B6392B278D2300A52491 /* SceneDelegate.swift in Sources */,
 				03F8B6532B28F0C300A52491 /* Character.swift in Sources */,
 			);
@@ -326,7 +342,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YX889WRPYL;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "HW-21-Alamofire/Info.plist";
+				INFOPLIST_FILE = "HW-21-Alamofire/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -352,7 +368,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YX889WRPYL;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "HW-21-Alamofire/Info.plist";
+				INFOPLIST_FILE = "HW-21-Alamofire/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
