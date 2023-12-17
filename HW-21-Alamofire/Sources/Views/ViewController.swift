@@ -8,13 +8,18 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    // MARK: Outlets
+    
     private lazy var tableView: UITableView = {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
+        tableView.delegate = self
         tableView.dataSource = self
         return tableView
     }()
+    
+    // MARK: Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +28,9 @@ class ViewController: UIViewController {
         setupNavigationBar()
         fetchInfo()
     }
-
+    
+    // MARK: Setup
+    
     func setupTableConstraints() {
         NSLayoutConstraint.activate([
             tableView.topAnchor.constraint(equalTo: view.topAnchor),
@@ -48,7 +55,40 @@ class ViewController: UIViewController {
             self.tableView.reloadData()
         }
     }
+}
+
+// MARK: ViewController Extensions
+
+extension ViewController: UITableViewDelegate {
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let selectedHero = AlamofireManager.characters[indexPath.row]
+        let modalView = ModalViewController()
+        
+        modalView.titleLabel.text = "Hero name: \n\n \(selectedHero.name)"
+        modalView.descriptionLabel.text = "Description: \n\n \(selectedHero.description == "" ? "Not specified" : "\(selectedHero.description)")"
+        
+        if selectedHero.events.items.isEmpty {
+            modalView.eventsLabel.text = "Events: \n\n There have been no events with this character"
+        }
+        else {
+            let firstFiftheenEvents = selectedHero.events.items.prefix(10)
+            let events = firstFiftheenEvents.map { $0.name }
+            modalView.eventsLabel.text = "Events: \n\n \(events.joined(separator: ", "))"
+        }
+        
+        if selectedHero.comics.items.isEmpty {
+            modalView.comicsLabel.text = "Comics: \n\n There have been no comics with this character"
+        }
+        else {
+            let firstFiftheenComics = selectedHero.comics.items.prefix(10)
+            let comics = firstFiftheenComics.map { $0.name }
+            modalView.comicsLabel.text = "Comics: \n\n \(comics.joined(separator: "\n"))"
+        }
+        
+        present(modalView, animated: true)
+    }
 }
 
 extension ViewController: UITableViewDataSource {
@@ -63,7 +103,5 @@ extension ViewController: UITableViewDataSource {
         cell.configure(with: character)
         return cell
     }
-    
-    
 }
 
