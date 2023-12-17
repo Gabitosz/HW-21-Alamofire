@@ -9,6 +9,8 @@ import UIKit
 
 class CharacterTableViewCell: UITableViewCell {
     
+    // MARK: Outlets
+    
     let nameLabel: UILabel = {
         let nameLabel = UILabel()
         return nameLabel
@@ -26,14 +28,20 @@ class CharacterTableViewCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        let views = [nameLabel, comicsLabel, eventsLabel]
-        views.forEach { $0.translatesAutoresizingMaskIntoConstraints = false }
-        views.forEach { contentView.addSubview($0) }
+        setupViews()
         setupConstraints()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    // MARK: Setup
+    
+    private func setupViews() {
+        let views = [nameLabel, comicsLabel, eventsLabel]
+        views.forEach { $0.translatesAutoresizingMaskIntoConstraints = false }
+        views.forEach { contentView.addSubview($0) }
     }
     
     private func setupConstraints() {

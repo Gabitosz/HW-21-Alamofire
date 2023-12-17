@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0326936F2B2DC954000745E9 /* AlamofireManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0326936E2B2DC954000745E9 /* AlamofireManager.swift */; };
 		03371D682B2F3F9B0031A5DE /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03371D672B2F3F9B0031A5DE /* ModalViewController.swift */; };
+		03371D6B2B2F9B490031A5DE /* HideKeyboard+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03371D6A2B2F9B490031A5DE /* HideKeyboard+Ext.swift */; };
+		03371D6F2B2FA0400031A5DE /* FetchInfoAfterDeleting+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03371D6E2B2FA0400031A5DE /* FetchInfoAfterDeleting+Ext.swift */; };
 		03F8B6372B278D2300A52491 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F8B6362B278D2300A52491 /* AppDelegate.swift */; };
 		03F8B6392B278D2300A52491 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F8B6382B278D2300A52491 /* SceneDelegate.swift */; };
 		03F8B63B2B278D2300A52491 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F8B63A2B278D2300A52491 /* ViewController.swift */; };
@@ -23,6 +25,8 @@
 /* Begin PBXFileReference section */
 		0326936E2B2DC954000745E9 /* AlamofireManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireManager.swift; sourceTree = "<group>"; };
 		03371D672B2F3F9B0031A5DE /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		03371D6A2B2F9B490031A5DE /* HideKeyboard+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HideKeyboard+Ext.swift"; sourceTree = "<group>"; };
+		03371D6E2B2FA0400031A5DE /* FetchInfoAfterDeleting+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FetchInfoAfterDeleting+Ext.swift"; sourceTree = "<group>"; };
 		03F8B6332B278D2300A52491 /* HW-21-Alamofire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HW-21-Alamofire.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03F8B6362B278D2300A52491 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03F8B6382B278D2300A52491 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +62,15 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		03371D692B2F9B040031A5DE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				03371D6A2B2F9B490031A5DE /* HideKeyboard+Ext.swift */,
+				03371D6E2B2FA0400031A5DE /* FetchInfoAfterDeleting+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		03F8B62A2B278D2200A52491 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +101,7 @@
 		03F8B64A2B2790E200A52491 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				03371D692B2F9B040031A5DE /* Extensions */,
 				0326936D2B2DC93C000745E9 /* Service */,
 				03F8B6542B28F2E900A52491 /* Cells */,
 				03F8B6512B28F05700A52491 /* Models */,
@@ -274,9 +288,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03371D6B2B2F9B490031A5DE /* HideKeyboard+Ext.swift in Sources */,
 				03F8B63B2B278D2300A52491 /* ViewController.swift in Sources */,
 				03F8B6372B278D2300A52491 /* AppDelegate.swift in Sources */,
 				03F8B6572B28F35300A52491 /* CharacterTableViewCell.swift in Sources */,
+				03371D6F2B2FA0400031A5DE /* FetchInfoAfterDeleting+Ext.swift in Sources */,
 				03F8B6392B278D2300A52491 /* SceneDelegate.swift in Sources */,
 				0326936F2B2DC954000745E9 /* AlamofireManager.swift in Sources */,
 				03F8B6532B28F0C300A52491 /* Character.swift in Sources */,
