@@ -14,12 +14,6 @@ class CharacterTableViewCell: UITableViewCell {
         return nameLabel
     }()
     
-    let descriptionLabel: UILabel = {
-        let descriptionLabel = UILabel()
-        descriptionLabel.numberOfLines = 8
-        return descriptionLabel
-    }()
-    
     let comicsLabel: UILabel = {
         let comicsLabel = UILabel()
         return comicsLabel
@@ -32,7 +26,7 @@ class CharacterTableViewCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        let views = [nameLabel, descriptionLabel, comicsLabel, eventsLabel]
+        let views = [nameLabel, comicsLabel, eventsLabel]
         views.forEach { $0.translatesAutoresizingMaskIntoConstraints = false }
         views.forEach { contentView.addSubview($0) }
         setupConstraints()
@@ -49,11 +43,7 @@ class CharacterTableViewCell: UITableViewCell {
             nameLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
             nameLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
             
-            descriptionLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 8),
-            descriptionLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
-            descriptionLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
-            
-            comicsLabel.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor, constant: 12),
+            comicsLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 12),
             comicsLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
             comicsLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
             
@@ -65,8 +55,7 @@ class CharacterTableViewCell: UITableViewCell {
     }
     
     func configure(with character: Character) {
-        nameLabel.text = "Character Name: \(character.name)"
-        descriptionLabel.text = "Description: \(character.description == "" ? "Not specified" : "\(character.description)")"
+        nameLabel.text = "Hero Name: \(character.name)"
         comicsLabel.text = "Comics available: \(String(describing: character.comics.available))"
         eventsLabel.text = "Events available: \(String(describing: character.events.available))"
     }
