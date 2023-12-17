@@ -21,7 +21,7 @@ class AlamofireManager {
                     self.characters = characters
                     completion()
                 case .failure(let error):
-                    print("Ошибка: \(error)")
+                    print("Error: \(error)")
                     completion()
                 }
             }
