@@ -8,33 +8,22 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
-    private var characters = [Character]()
-    
-    let firstChar = Character(id: 1, name: "First", description: "Descr", comics: Comics(available: 1, items: [Comic(name: "Comic")]), events: Events(available: 1, items: [Event(name: "Event")]))
-    
-    let secondChar = Character(id: 1, name: "First", description: "Descr", comics: Comics(available: 1, items: [Comic(name: "Comic")]), events: Events(available: 1, items: [Event(name: "Event")]))
-    
-    func add() {
-        characters.append(firstChar)
-        characters.append(secondChar)
-    }
-    
+
     private lazy var tableView: UITableView = {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
-        tableView.delegate = self
         tableView.dataSource = self
         return tableView
     }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addSubview(tableView)
-        add()
-        tableView.register(CharacterTableViewCell.self, forCellReuseIdentifier: "CharacterCell")
+        setupTableView()
         setupTableConstraints()
+        setupNavigationBar()
+        fetchInfo()
     }
-    
+
     func setupTableConstraints() {
         NSLayoutConstraint.activate([
             tableView.topAnchor.constraint(equalTo: view.topAnchor),
@@ -44,23 +33,33 @@ class ViewController: UIViewController {
         ])
     }
     
-}
-
-extension ViewController: UITableViewDelegate {
+    func setupTableView() {
+        view.addSubview(tableView)
+        tableView.register(CharacterTableViewCell.self, forCellReuseIdentifier: "CharacterCell")
+    }
+    
+    func setupNavigationBar() {
+        navigationItem.title = "Marvel Heroes"
+        navigationController?.navigationBar.prefersLargeTitles = true
+    }
+    
+    func fetchInfo() {
+        AlamofireManager.fetchCharacters(countOfCharacters: 20) {
+            self.tableView.reloadData()
+        }
+    }
     
 }
 
 extension ViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        characters.count
+        AlamofireManager.characters.count
     }
-    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CharacterCell", for: indexPath) as! CharacterTableViewCell
-        let character = characters[indexPath.row]
-        
+        let character = AlamofireManager.characters[indexPath.row]
         cell.configure(with: character)
         return cell
     }

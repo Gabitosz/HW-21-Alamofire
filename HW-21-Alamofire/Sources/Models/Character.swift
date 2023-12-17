@@ -7,7 +7,24 @@
 
 import Foundation
 
-struct Character: Codable {
+
+struct CharactersResponse: Decodable {
+    let data: Characters
+
+    private enum CodingKeys: String, CodingKey {
+        case data
+    }
+}
+
+struct Characters: Decodable {
+    let results: [Character]
+    
+    enum CodingKeys: String, CodingKey {
+        case results
+    }
+}
+
+struct Character: Decodable {
     let id: Int
     let name: String
     let description: String
@@ -15,20 +32,21 @@ struct Character: Codable {
     let events: Events
 }
 
-struct Comic: Codable {
+struct Comic: Decodable {
     let name: String
 }
 
-struct Comics: Codable {
+struct Comics: Decodable {
     let available: Int
     let items: [Comic]
 }
 
-struct Event: Codable {
+struct Event: Decodable {
     let name: String
 }
 
-struct Events: Codable {
+struct Events: Decodable {
     let available: Int
     let items: [Event]
 }
+
