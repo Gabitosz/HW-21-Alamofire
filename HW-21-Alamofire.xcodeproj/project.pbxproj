@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0326936F2B2DC954000745E9 /* AlamofireManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0326936E2B2DC954000745E9 /* AlamofireManager.swift */; };
+		03371D682B2F3F9B0031A5DE /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03371D672B2F3F9B0031A5DE /* ModalViewController.swift */; };
 		03F8B6372B278D2300A52491 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F8B6362B278D2300A52491 /* AppDelegate.swift */; };
 		03F8B6392B278D2300A52491 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F8B6382B278D2300A52491 /* SceneDelegate.swift */; };
 		03F8B63B2B278D2300A52491 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F8B63A2B278D2300A52491 /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		0326936E2B2DC954000745E9 /* AlamofireManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireManager.swift; sourceTree = "<group>"; };
+		03371D672B2F3F9B0031A5DE /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 		03F8B6332B278D2300A52491 /* HW-21-Alamofire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HW-21-Alamofire.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03F8B6362B278D2300A52491 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03F8B6382B278D2300A52491 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				03F8B63A2B278D2300A52491 /* ViewController.swift */,
+				03371D672B2F3F9B0031A5DE /* ModalViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				03F8B6392B278D2300A52491 /* SceneDelegate.swift in Sources */,
 				0326936F2B2DC954000745E9 /* AlamofireManager.swift in Sources */,
 				03F8B6532B28F0C300A52491 /* Character.swift in Sources */,
+				03371D682B2F3F9B0031A5DE /* ModalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
