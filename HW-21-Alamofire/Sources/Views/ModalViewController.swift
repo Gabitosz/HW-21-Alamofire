@@ -18,7 +18,7 @@ class ModalViewController: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.numberOfLines = 0
         label.lineBreakMode = .byWordWrapping
-    
+        
         return label
     }()
     
@@ -61,7 +61,7 @@ class ModalViewController: UIViewController {
     // MARK: Setup
     
     private func setupView() {
-         view.backgroundColor = .systemBackground
+        view.backgroundColor = .systemBackground
     }
     
     private func setupHierarchy() {
@@ -88,7 +88,7 @@ class ModalViewController: UIViewController {
             comicsLabel.topAnchor.constraint(equalTo: eventsLabel.bottomAnchor, constant: 50),
             comicsLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
             comicsLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
-           
+            
         ])
     }
     

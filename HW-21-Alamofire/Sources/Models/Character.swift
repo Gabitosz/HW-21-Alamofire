@@ -7,10 +7,9 @@
 
 import Foundation
 
-
 struct CharactersResponse: Decodable {
     let data: Characters
-
+    
     private enum CodingKeys: String, CodingKey {
         case data
     }
