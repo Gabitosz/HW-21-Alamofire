@@ -16,6 +16,7 @@ class CharacterTableViewCell: UITableViewCell {
     
     let descriptionLabel: UILabel = {
         let descriptionLabel = UILabel()
+        descriptionLabel.numberOfLines = 8
         return descriptionLabel
     }()
     
@@ -34,9 +35,7 @@ class CharacterTableViewCell: UITableViewCell {
         let views = [nameLabel, descriptionLabel, comicsLabel, eventsLabel]
         views.forEach { $0.translatesAutoresizingMaskIntoConstraints = false }
         views.forEach { contentView.addSubview($0) }
-
         setupConstraints()
-        
     }
     
     required init?(coder: NSCoder) {
@@ -46,30 +45,29 @@ class CharacterTableViewCell: UITableViewCell {
     private func setupConstraints() {
         NSLayoutConstraint.activate([
             
-        nameLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10),
-        nameLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
-        nameLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
-        
-        descriptionLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 8),
-        descriptionLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
-        descriptionLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
-        
-        comicsLabel.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor, constant: 28),
-        comicsLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
-        comicsLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
-        
-        eventsLabel.topAnchor.constraint(equalTo: comicsLabel.bottomAnchor, constant: 8),
-        eventsLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
-        eventsLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
-        eventsLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -8)
+            nameLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10),
+            nameLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
+            nameLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
+            
+            descriptionLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 8),
+            descriptionLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
+            descriptionLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
+            
+            comicsLabel.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor, constant: 12),
+            comicsLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
+            comicsLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
+            
+            eventsLabel.topAnchor.constraint(equalTo: comicsLabel.bottomAnchor, constant: 8),
+            eventsLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
+            eventsLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
+            eventsLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -8)
         ])
     }
     
     func configure(with character: Character) {
-        nameLabel.text = "Name: \(character.name)"
-        descriptionLabel.text = "Description: \(character.description)"
-        comicsLabel.text = "Comics: \(character.comics)"
-        eventsLabel.text = "Events: \(character.events)"
+        nameLabel.text = "Character Name: \(character.name)"
+        descriptionLabel.text = "Description: \(character.description == "" ? "Not specified" : "\(character.description)")"
+        comicsLabel.text = "Comics available: \(String(describing: character.comics.available))"
+        eventsLabel.text = "Events available: \(String(describing: character.events.available))"
     }
-    
 }
