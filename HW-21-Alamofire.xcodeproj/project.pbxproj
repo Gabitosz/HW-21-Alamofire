@@ -11,14 +11,14 @@
 		03371D682B2F3F9B0031A5DE /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03371D672B2F3F9B0031A5DE /* ModalViewController.swift */; };
 		03371D6B2B2F9B490031A5DE /* HideKeyboard+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03371D6A2B2F9B490031A5DE /* HideKeyboard+Ext.swift */; };
 		03371D6F2B2FA0400031A5DE /* FetchInfoAfterDeleting+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03371D6E2B2FA0400031A5DE /* FetchInfoAfterDeleting+Ext.swift */; };
+		03A4E4EE2B3884E100671FCA /* SearchResults+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A4E4ED2B3884E100671FCA /* SearchResults+Ext.swift */; };
 		03F8B6372B278D2300A52491 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F8B6362B278D2300A52491 /* AppDelegate.swift */; };
 		03F8B6392B278D2300A52491 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F8B6382B278D2300A52491 /* SceneDelegate.swift */; };
-		03F8B63B2B278D2300A52491 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F8B63A2B278D2300A52491 /* ViewController.swift */; };
+		03F8B63B2B278D2300A52491 /* CharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F8B63A2B278D2300A52491 /* CharactersViewController.swift */; };
 		03F8B6402B278D2500A52491 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03F8B63F2B278D2500A52491 /* Assets.xcassets */; };
 		03F8B6432B278D2500A52491 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03F8B6412B278D2500A52491 /* LaunchScreen.storyboard */; };
 		03F8B6532B28F0C300A52491 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F8B6522B28F0C300A52491 /* Character.swift */; };
 		03F8B6572B28F35300A52491 /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F8B6552B28F35300A52491 /* CharacterTableViewCell.swift */; };
-		03F8B6582B28F35300A52491 /* CharacterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03F8B6562B28F35300A52491 /* CharacterTableViewCell.xib */; };
 		57AF5482DDF94529A41D438E /* Pods_HW_21_Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06914CED33B4A82BF2370365 /* Pods_HW_21_Alamofire.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,16 +27,16 @@
 		03371D672B2F3F9B0031A5DE /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 		03371D6A2B2F9B490031A5DE /* HideKeyboard+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HideKeyboard+Ext.swift"; sourceTree = "<group>"; };
 		03371D6E2B2FA0400031A5DE /* FetchInfoAfterDeleting+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FetchInfoAfterDeleting+Ext.swift"; sourceTree = "<group>"; };
+		03A4E4ED2B3884E100671FCA /* SearchResults+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchResults+Ext.swift"; sourceTree = "<group>"; };
 		03F8B6332B278D2300A52491 /* HW-21-Alamofire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HW-21-Alamofire.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03F8B6362B278D2300A52491 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03F8B6382B278D2300A52491 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		03F8B63A2B278D2300A52491 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		03F8B63A2B278D2300A52491 /* CharactersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewController.swift; sourceTree = "<group>"; };
 		03F8B63F2B278D2500A52491 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03F8B6422B278D2500A52491 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03F8B6442B278D2500A52491 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03F8B6522B28F0C300A52491 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		03F8B6552B28F35300A52491 /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
-		03F8B6562B28F35300A52491 /* CharacterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterTableViewCell.xib; sourceTree = "<group>"; };
 		06914CED33B4A82BF2370365 /* Pods_HW_21_Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HW_21_Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D82112FDD071B5448FC5C7D /* Pods-HW-21-Alamofire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HW-21-Alamofire.debug.xcconfig"; path = "Target Support Files/Pods-HW-21-Alamofire/Pods-HW-21-Alamofire.debug.xcconfig"; sourceTree = "<group>"; };
 		FAEEA7D421466F733144724C /* Pods-HW-21-Alamofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HW-21-Alamofire.release.xcconfig"; path = "Target Support Files/Pods-HW-21-Alamofire/Pods-HW-21-Alamofire.release.xcconfig"; sourceTree = "<group>"; };
@@ -67,6 +67,7 @@
 			children = (
 				03371D6A2B2F9B490031A5DE /* HideKeyboard+Ext.swift */,
 				03371D6E2B2FA0400031A5DE /* FetchInfoAfterDeleting+Ext.swift */,
+				03A4E4ED2B3884E100671FCA /* SearchResults+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -133,7 +134,7 @@
 		03F8B64D2B27915600A52491 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				03F8B63A2B278D2300A52491 /* ViewController.swift */,
+				03F8B63A2B278D2300A52491 /* CharactersViewController.swift */,
 				03371D672B2F3F9B0031A5DE /* ModalViewController.swift */,
 			);
 			path = Views;
@@ -151,7 +152,6 @@
 			isa = PBXGroup;
 			children = (
 				03F8B6552B28F35300A52491 /* CharacterTableViewCell.swift */,
-				03F8B6562B28F35300A52491 /* CharacterTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -233,7 +233,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03F8B6582B28F35300A52491 /* CharacterTableViewCell.xib in Resources */,
 				03F8B6432B278D2500A52491 /* LaunchScreen.storyboard in Resources */,
 				03F8B6402B278D2500A52491 /* Assets.xcassets in Resources */,
 			);
@@ -288,8 +287,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03A4E4EE2B3884E100671FCA /* SearchResults+Ext.swift in Sources */,
 				03371D6B2B2F9B490031A5DE /* HideKeyboard+Ext.swift in Sources */,
-				03F8B63B2B278D2300A52491 /* ViewController.swift in Sources */,
+				03F8B63B2B278D2300A52491 /* CharactersViewController.swift in Sources */,
 				03F8B6372B278D2300A52491 /* AppDelegate.swift in Sources */,
 				03F8B6572B28F35300A52491 /* CharacterTableViewCell.swift in Sources */,
 				03371D6F2B2FA0400031A5DE /* FetchInfoAfterDeleting+Ext.swift in Sources */,
