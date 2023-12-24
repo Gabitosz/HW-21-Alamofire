@@ -29,6 +29,16 @@ struct Character: Decodable {
     let description: String
     let comics: Comics
     let events: Events
+    let image: Image
+    
+    enum CodingKeys: String, CodingKey {
+        case id
+        case name
+        case description
+        case comics
+        case events
+        case image = "thumbnail"
+    }
 }
 
 struct Comic: Decodable {
@@ -48,4 +58,14 @@ struct Events: Decodable {
     let available: Int
     let items: [Event]
 }
+
+struct Image: Decodable {
+    let path: String
+    let `extension`:  String
+    var imageURL: String {
+        return path + "/portrait_xlarge." + `extension`
+    }
+}
+
+
 

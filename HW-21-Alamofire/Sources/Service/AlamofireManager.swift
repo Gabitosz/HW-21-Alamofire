@@ -7,6 +7,7 @@
 
 import Foundation
 import Alamofire
+import AlamofireImage
 
 class AlamofireManager {
     
@@ -43,6 +44,17 @@ class AlamofireManager {
             }
         }
     }
+    
+    static func fetchImage(for character: Character, completion: @escaping (UIImage?) -> Void) {
+        let imageUrl = character.image.imageURL
+        AF.request(imageUrl).responseImage { response in
+            switch response.result {
+            case .success(let image):
+                completion(image)
+            case .failure:
+                completion(nil)
+            }
+        }
+    }
+    
 }
-
-
