@@ -90,8 +90,8 @@ class ModalViewController: UIViewController {
             characterImageView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 20),
             characterImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             
-            characterImageView.widthAnchor.constraint(equalToConstant: 60),
-            characterImageView.heightAnchor.constraint(equalToConstant: 60),
+            characterImageView.widthAnchor.constraint(equalToConstant: 300),
+            characterImageView.heightAnchor.constraint(equalToConstant: 300),
             
             descriptionLabel.topAnchor.constraint(equalTo: characterImageView.bottomAnchor, constant: 50),
             descriptionLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
